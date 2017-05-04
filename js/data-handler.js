@@ -41,9 +41,9 @@ request.onupgradeneeded = function(event) {
 
 };
 
-//var reloadHttpData = function ($http, callback) {
-//	$http.jsonp('https://simon-ielts.herokuapp.com/data/collocation/index?callback=JSON_CALLBACK')
-//		.success(function (data, status, headers, config) {
+reloadHttpData = function ($http, callback) {
+	$http.jsonp('https://simon-ielts.herokuapp.com/data/collocation/index?callback=JSON_CALLBACK')
+		.success(function (data, status, headers, config) {
 			// console.log("data", data);
 			// var gunzip = new Zlib.Gunzip(data);
 			// var plain = gunzip.decompress();

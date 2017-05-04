@@ -13,6 +13,18 @@ $statement = $pdo->query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 echo htmlentities($row['_message']);
 
+//Giá trị trả về sau khi tạo object trên (được gán vào biến $DBH) được gọi là database handler và object này sẽ được 
+// dùng xuyên suốt trong quá trình kết nối với CSDL. 
+// Trong khi viết mã lệnh chúng ta cũng cần sử dụng try..catch để xử lý các trường hợp xảy ra khi kết nối với CSDL.
+try {
+    // PDO_MYSQL
+    $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+} catch(PDOException $e) {
+    echo $e->getMessage();
+}
+//
+
+//++++++++++++++++++++++++++
 // mysql
 $c = mysql_connect("example.com", "user", "password");
 mysql_select_db("database");

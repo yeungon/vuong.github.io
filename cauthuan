@@ -1,0 +1,41 @@
+Nói đến trang tin tức thì mình nghĩ đến những trang hiển thị, cung cấp cho người đọc những bài viết tin tức về các lĩnh vực khác nhau. Cấu trúc trang tin tức sẽ chia thành 2 phần chính :
+
+Client : đây là cho người dùng để họ xem bài viết, tin tức.
+Admin : đây là nơi dành cho các quản trị viên, tác giả để có thể quản lí website, các bài viết, chuyên mục, ...
+Đó cũng là các chức năng mà mình sẽ làm được sau series này.
+
+2. Tạo database cho ứng dụng
+
+Các bạn tạo một database với tên newspaper và chọn Collation là utf8_unicode_ci.
+
+Ok ! Qua các bài sau chúng ta sẽ xây dựng các table.
+
+3. Xây dựng folder admin
+
+Vì sao mình lại xây dựng phần admin mà không phải là phần client trước ? Vì nếu xây dựng client trước thì khi thiết kế giao diện chúng ta cần phải sử dụng nội dung giả để test, dẫn đến code rối. Cho nên mình sẽ xây dựng admin trước để có thể tự tạo nội dung trên CSDL rồi mới xây dựng client hiển thị sau.
+
+Đây là sơ đồ cấu trúc của folder admin ứng dụng trang tin tức này :
+
+
+Trong đó :
+
+Folder newspape là folder project của mình.
+Folder admin là folder phần admin của ứng dụng, folder này sẽ chứa tất cả các mục liên quan đến phần quản trị.
+Folder admin/bootstrap là thư viện Bootstrap, các bạn có thể download tại đây hoặc source code của bài viết).
+Folder admin/bootstrap/css là phần CSS của thư viện Bootstrap.
+Folder admin/bootstrap/fonts là phần icon của thư viện Bootstrap.
+Folder admin/bootstrap/js là phần Javascript của thư viện Bootstrap.
+Folder admin/classes là folder chứa các thư viện PHP xử lý, mình sẽ viết nó ở các bài sau.
+Folder admin/core là folder trung tâm của phần admin.
+File admin/core/init.php là file trung gian kết nối database với các file xử lý để tương tác với CSDL, ngoài ra nó sẽ chứa các thông tin chung của website.
+Folder admin/css là folder style cho giao diện admin, cái này cũng thực sự không cần thiết, chỉ trừ các trường hợp mình muốn biển thị một số giao diện nào đó trong thư viện Bootstrap thì mình sẽ cần đến folder này.
+Folder admin/includes là folder chứa các file include với các trang giao diện.
+File admin/includes/header.php là file chứa nội dung đầu tiên của mỗi trang giao diện  như title, các thẻ meta, menu, kết nối với các thư viện CSS, font ...
+File admin/includes/footer.php là file chứa nội dung cuối cùng của mỗi trang giao diện như các popup thông báo, kết nối các thư viện JS, ...
+Folder admin/js là folder JS chứa các file JS
+File admin/js/jquery.form.min.js là thư viện Form jQuery (các bạn có thể download trên Google hoặc source code bài viết).
+File admin/js/jquery.min.js là thư viện jQuery (các bạn có thể download trên Google hoặc source code bài viết).
+Ngoài ra sẽ còn các file JS để xử lý nữa, chúng ta sẽ viết chúng vào các bài sau.
+Folder admin/templates là folder chứa các file cắt HTML của mỗi phần chức năng, để code trong file PHP thoáng và dễ nhìn hơn, chúng ta sẽ viết chúng vào các bài sau.
+File index.php là file trang chủ của phần admin ứng dụng.
+Chúng ta đã xây dựng xong cấu trúc folder admin của ứng dụng rồi đấy ! Ngoài ra còn một số file PHP xử lý dữ liệu nữa, chúng ta sẽ tìm hiểu vào các bài sau.

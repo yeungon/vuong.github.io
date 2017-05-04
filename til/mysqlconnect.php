@@ -5,6 +5,20 @@ $result = $mysqli->query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL
 $row = $result->fetch_assoc();
 echo htmlentities($row['_message']);
 
+/***
+Với MySQLi có 2 cách viết khác nhau và bạn không cần phải chỉ ra loại database vì chúng ta chỉ có thể làm việc với MySQL 
+khi sử dụng thư viện này:
+
+
+***/
+
+// mysqli: procedural
+$mysqli = mysqli_connect('localhost','username','password','database');
+
+// mysqli: object oriented
+$mysqli = new mysqli('localhost','username','password','database');
+//
+
 // PDO
 $pdo = new PDO('mysql:host=example.com;dbname=database', 'user', 'password');
 //5 đối số, số đầu: loại database, 2 số sau: host và database, 2 cái cuối là tên đăng nhập và mật khẩu
@@ -14,6 +28,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
 echo htmlentities($row['_message']);
 
 // mysql
+
 $c = mysql_connect("example.com", "user", "password");
 mysql_select_db("database");
 $result = mysql_query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL");

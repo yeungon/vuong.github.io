@@ -39,3 +39,6 @@ Ngoài ra sẽ còn các file JS để xử lý nữa, chúng ta sẽ viết ch�
 Folder admin/templates là folder chứa các file cắt HTML của mỗi phần chức năng, để code trong file PHP thoáng và dễ nhìn hơn, chúng ta sẽ viết chúng vào các bài sau.
 File index.php là file trang chủ của phần admin ứng dụng.
 Chúng ta đã xây dựng xong cấu trúc folder admin của ứng dụng rồi đấy ! Ngoài ra còn một số file PHP xử lý dữ liệu nữa, chúng ta sẽ tìm hiểu vào các bài sau.
+
+
+// source: https://freetuts.net/php-trang-tin-tuc-tao-database-va-cau-truc-folder-admin-764.html

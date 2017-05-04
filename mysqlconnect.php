@@ -7,6 +7,8 @@ echo htmlentities($row['_message']);
 
 // PDO
 $pdo = new PDO('mysql:host=example.com;dbname=database', 'user', 'password');
+//5 đối số, số đầu: loại database, 2 số sau: host và database, 2 cái cuối là tên đăng nhập và mật khẩu
+
 $statement = $pdo->query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL");
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 echo htmlentities($row['_message']);

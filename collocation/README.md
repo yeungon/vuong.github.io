@@ -1,4 +1,6 @@
 
+This tiny project is forked from tuanchauict.github.io/collocation/
+
 Cái này xin từ tuanchauict, hihi.
 
-Source: tuanchauict.github.io/collocation/
+Created in MAY 2017.

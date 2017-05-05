@@ -7,7 +7,7 @@ https://www.qhonline.edu.vn/video-traininge0a0bc94e5z53.html
 - create a variable 
 $a = mysql_connect ();
 2) select a database 
-- mysql_select_db ()
+- mysql_select_db ('tendatabase', $a)
 3) querry
 - create another variable 
 $b= mysql_querry ();
@@ -16,8 +16,21 @@ $b= mysql_querry ();
 mysql_num_row ($b);
 
 5) fetching data to php: 2 ways
+
+noted:
+1) using echo && print to extract data
+
+2) using while loop to extract more record in the data
+
+example: 
+$b= mysql_querry (); // in the step 3
+
+while (mysql_fetch_assoc($b)){echo
+
+/print}
+
 - mysql_fetch_array ();
-- mysql-fetch_assoc ();
+- mysql-fetch_assoc (); // should use this one instead of the first one because it is more accurate.
 
 6) close mysql
 mysql_close ($a); close the previous variable

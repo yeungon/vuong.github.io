@@ -23,6 +23,8 @@ https://github.com/yeungon/jQuery-Autocomplete
 
 https://www.thuthuatweb.net/javacript/tao-chuc-nang-autocomplete-don-gian-bang-html5-va-jquery.html
 
+https://www.youtube.com/watch?v=Dj3MP5w0dpc
+
 
 https://www.devbridge.com/sourcery/components/jquery-autocomplete/
 

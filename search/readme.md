@@ -14,3 +14,5 @@ Basically, three files are needed for building a live search including:
 And I am going to build my own search tool with my own content (XML and maybe JSON later).
 
 Source: http://laedaily.com/live-search-su-dung-ajax.html
+
+further reading: https://yinyangit.wordpress.com/2011/06/01/ajax-a-xmlhttprequest-example/

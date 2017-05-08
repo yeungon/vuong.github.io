@@ -17,6 +17,19 @@ Source: http://laedaily.com/live-search-su-dung-ajax.html
 
 further reading: https://yinyangit.wordpress.com/2011/06/01/ajax-a-xmlhttprequest-example/
 
+http://www.thuthuatweb.net/demo/autocomplete/
+
+https://github.com/yeungon/jQuery-Autocomplete
+
+https://www.thuthuatweb.net/javacript/tao-chuc-nang-autocomplete-don-gian-bang-html5-va-jquery.html
+
+
+https://www.devbridge.com/sourcery/components/jquery-autocomplete/
+
+https://codeforgeek.com/2014/09/ajax-search-box-php-mysql/
+
+https://www.youtube.com/watch?v=vbsgMBLKO5U
+
 paid PHP script:
 
 https://codecanyon.net/item/php-search-engine/4052196?s_rank=24

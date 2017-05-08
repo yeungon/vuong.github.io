@@ -11,7 +11,16 @@ http://blog.pamelafox.org/2013/06/exporting-google-spreadsheet-as-json.html
 
 https://coderwall.com/p/duapqq/use-a-google-spreadsheet-as-your-json-backend
 
+
 code: https://gist.github.com/yeungon/60c7506357c7b495349e5702783b5f20
+
+tested: http://www.convertcsv.com/csv-to-json.htm
+
+un-checked: http://shancarter.github.io/mr-data-converter/
+
+should check: https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/ConvertTo-Json
+
+powered by powershell
 
 
 I realise that Google Docs can be used as a database system for archiving JSON or XML data.

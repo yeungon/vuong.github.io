@@ -1,1 +1,0 @@
-effect for search engine.

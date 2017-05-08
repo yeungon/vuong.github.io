@@ -30,6 +30,8 @@ https://www.devbridge.com/sourcery/components/jquery-autocomplete/
 
 https://codeforgeek.com/2014/09/ajax-search-box-php-mysql/
 
+http://technotip.com/2199/reading-xml-file-using-jquery-ajax-method/
+
 https://www.youtube.com/watch?v=vbsgMBLKO5U
 
 hay: https://www.youtube.com/watch?v=Q7XID9nrJGM

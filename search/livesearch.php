@@ -1,3 +1,5 @@
+<?php
+
 $xmlDoc=new DOMDocument();
 $xmlDoc->load("http://laedaily.com/laravel-filemanager/photos/1/php/links.xml");
  
@@ -41,3 +43,5 @@ if ($hint=="") {
  
 //output the response
 echo $response;
+
+?>

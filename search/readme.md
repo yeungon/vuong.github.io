@@ -30,6 +30,8 @@ https://codeforgeek.com/2014/09/ajax-search-box-php-mysql/
 
 https://www.youtube.com/watch?v=vbsgMBLKO5U
 
+hay: https://www.youtube.com/watch?v=Q7XID9nrJGM
+
 paid PHP script:
 
 https://codecanyon.net/item/php-search-engine/4052196?s_rank=24

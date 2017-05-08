@@ -17,4 +17,9 @@ Source: http://laedaily.com/live-search-su-dung-ajax.html
 
 further reading: https://yinyangit.wordpress.com/2011/06/01/ajax-a-xmlhttprequest-example/
 
-paid PHP script: https://codecanyon.net/item/php-search-engine/4052196?s_rank=24
+paid PHP script:
+
+https://codecanyon.net/item/php-search-engine/4052196?s_rank=24
+
+
+https://codecanyon.net/category/php-scripts/search

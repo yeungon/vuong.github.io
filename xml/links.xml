@@ -1,0 +1,27 @@
+<pages>
+<id>
+<title>văn chương</title>
+<content> Văn chương lụy phần dư. Nội dung của thẻ HTML là nội dung gì vậy bà con cô bác. </content>
+</id>
+
+<id>
+<title>Ngôn ngữ lập trình PHP</title>
+<content> Nội dung của thẻ PHP là nội dung gì vậy bà con cô bác. </content>
+</id>
+
+<id>
+<title>CSS background Property</title>
+<content> Nội dung của thẻ CSS là nội dung gì vậy bà con cô bác. </content>
+</id>
+
+<id>
+<title>Văn học Property</title>
+<content> Nội dung của thẻ Linh tinh là nội dung gì vậy bà con cô bác. </content>
+</id>
+
+<id>
+<title>JavaScript Date Object</title>
+<content> Nội dung của thẻ khác là nội dung gì vậy bà con cô bác. </content>
+</id>
+
+</pages>

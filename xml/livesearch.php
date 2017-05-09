@@ -1,6 +1,6 @@
 <?php
 $xmlDoc=new DOMDocument();
-$xmlDoc->load("links.xml");
+$xmlDoc->load("https://yeungon.github.io/xml/links.xml");
 
 $x=$xmlDoc->getElementsByTagName('id');
 

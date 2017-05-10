@@ -10,7 +10,7 @@ body {
 	text-align: center;
 	vertical-align:middle;
 	background: #3b5998;
-	padding: 25px;
+	padding: 35px;
 	width: 35%;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
@@ -18,7 +18,7 @@ body {
 }
 
 #searcharea label {
-	font: bold 1.3em Georgia;
+	font: bold 1.0em Georgia;
 	text-transform: uppercase;
 	padding-bottom:  5px;
 	color: #ffffff;

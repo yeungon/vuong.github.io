@@ -10,6 +10,7 @@ $('#search').keyup(function() {
 				output += '<h2>'+ val.name +'</h2>';
 				//output += '<img src="images/'+ val.shortname +'_tn.jpg" alt="'+ val.name +'" />';
 				output += '<p>'+ val.bio +'</p>';
+				output += '<p>'+ val.dictid +'</p>';
 				output += '</li>';
 			}
 		});

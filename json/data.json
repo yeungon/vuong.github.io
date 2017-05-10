@@ -31,11 +31,17 @@
     "dictid": "Mức độ an toàn: 5/10"
     
   },
-   {
+  
+     {
     "name":"Việt Anh, Híp",
     "shortname":"vuong_nguyen",
     "bio":"Gấu bự driver chuyên nghiệp sắp sang JP hưởng trăng mật, luôn luôn available. Đặc điểm: thích gái già..",
      "dictid": "Mức độ an toàn: 6/10"
-   }
+   },
+  {
+        "name": "physique",
+        "bio": "<p><u> ADJ. </u><div class=\"ex\"><b> good, magnificent, muscular, powerful, strong, superb | frail </b></div><div class=\"excontent\"></div></p><p><u> PREP. </u><div class=\"ex\"><b> ~ for </b></div><div class=\"excontent\"><i>She doesn't have the physique for a dancer. </i></div></p>",
+        "dictid": "noun"
+    }
   
  ]

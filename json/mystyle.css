@@ -1,5 +1,9 @@
 /* @override 
-	original: http://iviewsource.com/exercises/ajax/mystyle.css */
+original: http://iviewsource.com/exercises/ajax/mystyle.css 
+customized: vuong contact@vuongnguyen.net
+*/
+
+
 
 body {
 	background: #EEE ;
@@ -11,22 +15,23 @@ body {
 	text-align: center;
 	vertical-align:middle;
 	background: #3b5998;
-	padding: 25px;
-	width: 45%;
-	-webkit-border-radius: 10px 10px 0 0;
-	-moz-border-radius: 10px 10px 0 0;
+	padding: 15px;
+	width: 46%;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
 }
 
 #searcharea label {
-	font: bold 1em Georgia;
-	padding-bottom:  5px;
+	font: bold 0.95em Georgia;
+	padding-bottom:  15px;
+	padding-right:  35px;
 	color: #ffffff;
 }
 
 #searcharea p {
-	margin: 1;
-	line-height: 1em;
+	margin: 1px;
+	line-height: 15em;
 	padding-bottom: 5px;
 }
 

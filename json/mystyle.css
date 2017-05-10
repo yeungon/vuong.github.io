@@ -9,7 +9,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	vertical-align:middle;
-	background: #86D6A4;
+	background: #227fa3;
 	padding: 35px;
 	width: 50%;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -49,7 +49,7 @@ body {
 }
 
 #update ul li {
-	width: 100%;
+	width: 50%;
 	padding: 0 20px;
 	background: #EEE;
 	padding-bottom: 10px;

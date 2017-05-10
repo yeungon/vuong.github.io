@@ -1,37 +1,41 @@
 [
   {
     "name":"Phạm Như Luân",
-    "bio":"Là nghiên cứu sinh trường đại học Auckland, NZ chuyên ngành observation." 
+    "bio":"Là nghiên cứu sinh trường đại học Auckland, NZ chuyên ngành observation.",
+    "dictid": "Mức độ an toàn: 7/10"
   },
   {
     "name":"Trần Minh Nhung",
-    "bio":"Còn được gọi là em súng, áo hai dây sẵn sàng tiếp khách khi vắng bóng chim, hehe. Kidding, em đang trở nên gái ngoan."
+    "bio":"Còn được gọi là em súng, áo hai dây sẵn sàng tiếp khách khi vắng bóng chim, hehe. Kidding, em đang trở nên gái ngoan.",
+    "dictid": "Mức độ an toàn: ???/10"
   },
   {
     "name":"Lê Thị Ngọc Phương",
-    "bio":"Lớp trưởng lớp PhD Linguistics trường Auckland. Biệt danh thỏ, nhưng không ưa gặm cỏ."
+    "bio":"Lớp trưởng lớp PhD Linguistics trường Auckland. Biệt danh thỏ, nhưng không ưa gặm cỏ.",
+    "dictid": "Mức độ an toàn: 9.5/10"
   },
   {
     "name":"Vượng Nguyễn",
     "bio":"Đang cố gắng để làm một người tốt hơn, hehe",
-    "dictid": "Từ điển danh từ"
+    "dictid": "Mức độ an toàn: 7/10"
   },
   {
     "name":"Lê Văn Nhiệm",
-    "shortname":"Jonathan_Ferrar",
-    "reknown":"Artist to Watch in 2012",
-    "bio":"Sửa ô-tô chuyện nhỏ. Tán gái: chuyện lớn. Nhút nhát và nhát gái."
+    "bio":"Sửa ô-tô chuyện nhỏ. Tán gái: chuyện lớn. Nhút nhát và nhát gái.",
+    "dictid": "Mức độ an toàn: 20/10"
    
   },
   {
     "name":"Dương Nguyễn Khánh Linh",
-    "shortname":"Khanh Linh",
-     "bio":"Thanh niên yêu nước và luôn available trong mọi hoàn cảnh. Driver chuyên nghiệp. Five star service. Có nhiều kỉ niệm với [gái] Ô-ta-gô"
+    "bio":"Thanh niên yêu nước và luôn available trong mọi hoàn cảnh. Driver chuyên nghiệp. Five star service. Có nhiều kỉ niệm với [gái] Ô-ta-gô",
+    "dictid": "Mức độ an toàn: 5/10"
+    
   },
    {
     "name":"Việt Anh, Híp",
     "shortname":"vuong_nguyen",
-    "bio":"Gấu bự driver chuyên nghiệp sắp sang JP hưởng trăng mật, luôn luôn available. Đặc điểm: thích gái già.." 
+    "bio":"Gấu bự driver chuyên nghiệp sắp sang JP hưởng trăng mật, luôn luôn available. Đặc điểm: thích gái già..",
+     "dictid": "Mức độ an toàn: 6/10"
    }
   
  ]

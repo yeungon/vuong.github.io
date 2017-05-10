@@ -1,26 +1,20 @@
 [
   {
     "name":"Phạm Như Luân",
-    "shortname":"vuong_nguyen",
     "bio":"Là nghiên cứu sinh trường đại học Auckland, NZ chuyên ngành observation." 
   },
   {
     "name":"Trần Minh Nhung",
-    "shortname":"vuong_nguyen",
-    "reknown":"Royal Academy of Painting and Sculpture",
     "bio":"Còn được gọi là em súng, áo hai dây sẵn sàng tiếp khách khi vắng bóng chim, hehe. Kidding, em đang trở nên gái ngoan."
   },
   {
     "name":"Lê Thị Ngọc Phương",
-    "shortname":"Barot_Bellingham",
-    "reknown":"Royal Academy of Painting and Sculpture",
     "bio":"Lớp trưởng lớp PhD Linguistics trường Auckland. Biệt danh thỏ, nhưng không ưa gặm cỏ."
   },
   {
     "name":"Vượng Nguyễn",
-    "shortname":"vuong_nguyen",
-    "reknown":"Royal Academy of Painting and Sculpture",
-    "bio":"Đang cố gắng để làm một người tốt hơn, hehe"
+    "bio":"Đang cố gắng để làm một người tốt hơn, hehe",
+    "dictid": "Từ điển danh từ"
   },
   {
     "name":"Lê Văn Nhiệm",

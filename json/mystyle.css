@@ -1,5 +1,5 @@
 /* @override 
-	http://iviewsource.com/exercises/ajax/mystyle.css */
+	original: http://iviewsource.com/exercises/ajax/mystyle.css */
 
 body {
 	background: #371e1e ;
@@ -11,7 +11,7 @@ body {
 	vertical-align:middle;
 	background: #BF996B;
 	padding: 35px;
-	width: 80%;
+	width: 50%;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
 	border-radius: 10px 10px 0 0;

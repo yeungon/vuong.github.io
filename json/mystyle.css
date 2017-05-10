@@ -31,7 +31,7 @@ body {
 }
 
 #searcharea input {
-	width: 80%;
+	width: 70%;
 	text-align: center;
 }
 
@@ -54,7 +54,7 @@ body {
 	background: #EEE;
 	padding-bottom: 10px;
 	height: 110px;
-	overflow: visible;
+	overflow: hidden;
 	border-bottom: 1px dotted #CCC;
 	
 	-webkit-animation: myanim 1s;

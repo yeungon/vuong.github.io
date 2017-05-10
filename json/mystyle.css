@@ -54,7 +54,7 @@ body {
 	background: #EEE;
 	padding-bottom: 10px;
 	height: 110px;
-	overflow: hidden;
+	overflow: visible;
 	border-bottom: 1px dotted #CCC;
 	
 	-webkit-animation: myanim 1s;

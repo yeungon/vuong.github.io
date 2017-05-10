@@ -11,35 +11,37 @@ body {
 	text-align: center;
 	vertical-align:middle;
 	background: #3b5998;
-	padding: 10px;
-	width: 40%;
+	padding: 25px;
+	width: 45%;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
-	border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 10px 10px;
 }
 
 #searcharea label {
-	font: bold 1.0em Georgia;
+	font: bold 1em Georgia;
 	padding-bottom:  5px;
 	color: #ffffff;
 }
 
 #searcharea p {
-	margin: 0;
+	margin: 1;
 	line-height: 1em;
 	padding-bottom: 5px;
 }
 
 #searcharea input {
-	width: 40%;
+	width: 50%;
 	text-align: center;
 }
 
 #update {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	width: 40%;
+	width: 47%;
 	margin: 0 auto;
-	border-top: 1px dotted #CCC;
+	margin-top: 10px;
+	
+	
 }
 
 #update ul {
@@ -53,8 +55,7 @@ body {
 	padding: 0 10px;
 	background: #EEE;
 	padding-bottom: 10px;
-	height: 110px;
-	overflow: auto;
+	overflow: visible;
 	border-bottom: 1px dotted #CCC;
 	
 	-webkit-animation: myanim 1s;
@@ -71,7 +72,6 @@ body {
 #update li:hover {
 	background: #FFFCE5;
 	min-height: 110px;
-	height: 650px;
 	overflow: visible;
 }
 

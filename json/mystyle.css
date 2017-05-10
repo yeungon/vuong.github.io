@@ -15,7 +15,7 @@ body {
 	text-align: center;
 	vertical-align:middle;
 	background: #3b5998;
-	padding: 15px;
+	padding: 25px;
 	width: 46%;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
@@ -23,21 +23,25 @@ body {
 }
 
 #searcharea label {
-	font: bold 0.95em Georgia;
+	font: bold 1.1em Georgia;
 	padding-bottom:  15px;
-	padding-right:  35px;
+	padding-right:  25px;
 	color: #ffffff;
 }
 
 #searcharea p {
 	margin: 1px;
-	line-height: 15em;
+	line-height: 25em;
 	padding-bottom: 5px;
 }
 
 #searcharea input {
-	width: 50%;
+	width: 60%;
+	height: 1.1cm;
+	border-radius: 5px 5px 5px 5px;
 	text-align: center;
+	font: 1.2em Georgia;
+	
 }
 
 #update {

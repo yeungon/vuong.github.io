@@ -2,14 +2,14 @@
 	original: http://iviewsource.com/exercises/ajax/mystyle.css */
 
 body {
-	background: #371e1e ;
+	background: #505050 ;
 }
 
 #searcharea {
 	margin: 0 auto;
 	text-align: center;
 	vertical-align:middle;
-	background: #BF996B;
+	background: #86D6A4;
 	padding: 35px;
 	width: 40%;
 	-webkit-border-radius: 10px 10px 0 0;

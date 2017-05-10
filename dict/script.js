@@ -4,7 +4,7 @@ $('#search').keyup(function() {
 	$.getJSON('content_final.json', function(data) {
 		var output = '<ul class="searchresults">';
 		$.each(data, function(key, val) {
-			if ((val.name.search(myExp) != -1) ||
+			if ((val.word.search(myExp) != -1) ||
 			(val.bio.search(myExp) != -1)) {
 				output += '<li>';
 				output += '<h2>'+ val.word +'</h2>';

@@ -66,5 +66,6 @@ Eg: Một sinh viên trẻ với mức thu nhập trung bình và mức đánh g
 
 →Kết luận: Anh ta (z) sẽmua một máy tính
 
+SOURCE: http://viet.jnlp.org/kien-thuc-co-ban-ve-xu-ly-ngon-ngu-tu-nhien/machine-learning-trong-nlp/dhinh-ly-baye
 
 ##NGÔN NGỮ c++11

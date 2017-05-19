@@ -1,0 +1,18 @@
+<pre>
+&lt;!DOCTYPE html&gt;
+{{ tpl_tag_html || '&lt;html lang="en"&gt;' }}
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;{{ tpl_html_title }}&lt;/title&gt;
+    &lt;meta name="description" content="{{ tpl_meta_description }}"&gt;
+    <span class="tpl-item" title="Click to remove" ng-click="delete($index,'meta')" rel="{{$index}}" ng-repeat="meta in tpl_meta track by $index">{{ '\t' + meta + '\n' || '' }}</span>
+    &lt;!-- style --&gt;
+    <span class="tpl-item" title="Click to remove" ng-click="delete($index,'css')" rel="{{$index}}" ng-repeat="style in tpl_css track by $index">{{ '\t' + style + '\n' || '' }}</span>
+&lt;/head&gt;
+&lt;body class="{{ tpl_tag_body_classes }}"&gt;
+    {{ tpl_body_text + '\n' || '' }}
+&lt;!-- scripts --&gt;
+<span class="tpl-item" title="Click to remove" ng-click="delete($index,'js')" rel="{{$index}}" ng-repeat="script in tpl_js track by $index">{{ script + '\n' || '' }}</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>

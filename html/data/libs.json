@@ -1,0 +1,290 @@
+[
+    {
+        "name": "jQuery v1",
+        "url": "//cdn.jsdelivr.net/jquery/###/jquery.js",
+        "version": "1.11.2",
+        "type": "js"
+    },
+    {
+        "name": "jQuery-migrate",
+        "url": "//cdn.jsdelivr.net/jquery.migrate/###/jquery-migrate.js",
+        "version": "1.2.1",
+        "type": "js"
+    },
+    {
+        "name": "jQuery v2",
+        "url": "//cdn.jsdelivr.net/jquery/###/jquery.js",
+        "version": "2.1.3",
+        "type": "js"
+    },
+    {
+        "name": "Modernizr",
+        "url": "//cdn.jsdelivr.net/modernizr/###/modernizr.js",
+        "version": "2.8.3",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs route",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-route.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs sanitize",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-sanitize.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs loader",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-loader.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs messages",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-messages.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs touch",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-touch.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs aria",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-aria.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs resource",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-resource.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs cookies",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-cookies.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs animate",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-animate.min.js",
+        "version": "1.3.16",
+        "type": "js"
+    },
+    {
+        "name": "AngularJs csp",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-csp.css",
+        "version": "1.3.16",
+        "type": "css"
+    },
+    {
+        "name": "React",
+        "url": "//fb.me/react-with-addons-###.js",
+        "version": "0.13.3",
+        "type": "js"
+    },
+    {
+        "name": "JSXTransformer",
+        "url": "//fb.me/JSXTransformer-###.js",
+        "version": "0.13.3",
+        "type": "js"
+    },
+    {
+        "name": "Underscore",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/underscore.js/###/underscore.js",
+        "version": "1.8.3",
+        "type": "js"
+    },
+    {
+        "name": "Lodash",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/###/lodash.js",
+        "version": "3.9.3",
+        "type": "js"
+    },
+    {
+        "name": "Local Javascript file",
+        "url": "./js/script.js",
+        "type": "js"
+    },
+    {
+        "name": "Ember",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/ember.js/###/ember.min.js",
+        "version": "1.11.1",
+        "type": "js"
+    },
+    {
+        "name": "Ember data",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/ember-data.js/###/ember-data.min.js",
+        "version": "1.0.0-beta.16.1",
+        "type": "js"
+    },
+    {
+        "name": "Mustache",
+        "url": "//cdn.jsdelivr.net/mustache.js/###/mustache.js",
+        "version": "0.8.1",
+        "type": "js"
+    },
+    {
+        "name": "Handlebars",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/handlebars.js/###/handlebars.min.js",
+        "version": "3.0.1",
+        "type": "js"
+    },
+    {
+        "name": "Handlebars runtime",
+        "url": "//cdn.jsdelivr.net/handlebarsjs/###/handlebars.runtime.js",
+        "version": "2.0.0",
+        "type": "js"
+    },
+    {
+        "name": "Backbone",
+        "url": "//cdn.jsdelivr.net/backbonejs/###/backbone.js",
+        "version": "1.1.2",
+        "type": "js"
+    },
+    {
+        "name": "Coffee script",
+        "url": "//cdn.jsdelivr.net/coffeescript/###/coffee-script.min.js",
+        "version": "1.7.1",
+        "type": "js"
+    },
+    {
+        "name": "Cufon",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/cufon/###/cufon-yui.js",
+        "version": "1.09i",
+        "type": "js"
+    },
+    {
+        "name": "Twitter Bootstrap JS",
+        "url": "//maxcdn.bootstrapcdn.com/bootstrap/###/js/bootstrap.min.js",
+        "version": "3.3.4",
+        "type": "js"
+    },
+    {
+        "name": "Twitter Bootstrap theme CSS",
+        "url": "//maxcdn.bootstrapcdn.com/bootstrap/###/css/bootstrap.min.css",
+        "version": "3.3.4",
+        "type": "css"
+    },
+    {
+        "name": "Twitter Bootstrap CSS",
+        "url": "//maxcdn.bootstrapcdn.com/bootstrap/###/css/bootstrap.min.css",
+        "version": "3.3.4",
+        "type": "css"
+    },
+    {
+        "name": "Zurb-Foundation JS",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/foundation/###/js/foundation.min.js",
+        "version": "5.5.1",
+        "type": "js"
+    },
+    {
+        "name": "Zurb-Foundation CSS",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/foundation/###/css/foundation.css",
+        "version": "5.5.1",
+        "type": "css"
+    },
+    {
+        "name": "Font - Awesome CSS",
+        "url": "//cdn.jsdelivr.net/fontawesome/###/css/font-awesome.css",
+        "version": "4.3.0",
+        "type": "css"
+    },
+    {
+        "name": "Fastclick JS",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/fastclick/###/fastclick.js",
+        "version": "1.0.6",
+        "type": "js"
+    },
+    {
+        "name": "Google fonts",
+        "url": "//fonts.googleapis.com/css?family=Open+Sans",
+        "version": "",
+        "type": "css"
+    },
+    {
+        "name": "Normalize",
+        "url": "//cdn.jsdelivr.net/normalize/###/normalize.css",
+        "version": "3.0.3",
+        "type": "css"
+    },
+    {
+        "name": "1140.css",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/1140/###/1140.css",
+        "version": "2.0",
+        "type": "css"
+    },
+    {
+        "name": "960gs",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/960gs/###/960.css",
+        "version": "0",
+        "type": "css"
+    },
+    {
+        "name": "Local CSS file",
+        "url": "./style/style.css",
+        "type": "css"
+    },
+    {
+        "name": "X-UA-Compatible",
+        "markup": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+        "type": "meta"
+    },
+    {
+        "name": "Favicon",
+        "markup": "<link rel=\"icon\" type=\"image/x-icon\" href=\"./favicon.ico\">",
+        "type": "meta"
+    },
+    {
+        "name": "Robots",
+        "markup": "<meta name=\"robots\" content=\"index, follow\">",
+        "type": "meta"
+    },
+    {
+        "name": "View Port",
+        "markup": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "type": "meta"
+    },
+    {
+        "name": "Browser happy",
+        "markup": "<!--[if lt IE 8]>\n\t<p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>\n\t<![endif]-->",
+        "type": "meta"
+    },
+    {
+        "name": "Author",
+        "markup": "<meta name=\"author\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "Copyright",
+        "markup": "<meta name=\"copyright\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "Keywords",
+        "markup": "<meta name=\"keywords\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "No translate",
+        "markup": "<meta name=\"google\" content=\"notranslate\">",
+        "type": "meta"
+    },
+    {
+        "name": "html5 shiv",
+        "markup": "<!--[if lt IE 9]>\n\t<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n\t<![endif]-->",
+        "type": "meta"
+    }
+]

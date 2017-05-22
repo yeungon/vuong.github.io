@@ -62,8 +62,40 @@ $mysqli = new mysqli('localhost','username','password','database');
 
 // PDO
 $pdo = new PDO('mysql:host=example.com;dbname=database', 'user', 'password');
-//5 đối số, số đầu: loại database, 2 số sau: host và database, 2 cái cuối là tên đăng nhập và mật khẩu
+/* 5 đối số, số đầu: loại database, 2 số sau: host và database, 2 cái cuối là tên đăng nhập và mật khẩu
+Hãy dừng lại để phân tích, nó thực sự rất đơn giản: bạn chỉ cần định tên của các trình điều khiển
+(trong trường hợp này là mysql), tiếp theo là các giá trị tương ứng kèm theo (connection string) 
+  để kết nối với trình điều khiển tương ứng. Điều hữu dụng hơn của phương án sử dụng PDO so với mysql_connect là gì ? 
+  Đó là một khi bạn cần kết nối với trình điều khiển khác (ví dụ như SQLite chẳng hạn),
+bạn chỉ cần cập nhật lại DSN hay còn gọi là Data Source Name phù hợp là xong. 
+  Chúng ta sẽ không cần phải phụ thuộc vào MySQL quá nhiều và cũng không cần phải sử dụng các hàm 
+  riêng biệt chỉ dành cho MySQL như mysql_connect làm gì.
 
+Nếu có lỗi kết nối, thay vì sử dụng hàm die() như đoạn mã đầu tiên, chúng ta sẽ đưa vào khối try/catch để bắt lỗi như sau:
+
+
+try {
+    $conn = new PDO('mysql:host=localhost;dbname=myDatabase', $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo 'ERROR: ' . $e->getMessage();
+}
+Bạn lưu ý rằng chế độ bắt lỗi trong DPO mặc định là PDO::ERRMODE_SILENT. Với thiết lập này không thay đổi, bạn sẽ cần tự lấy lỗi thông qua những câu truy vấn của mình.
+
+?
+1
+2
+echo $conn->errorCode();
+echo $conn->errorInfo();
+Đó là môi trường thực tế, còn trong môi trường của nhà phát triển, bạn sẽ cần dừng kịch bản lại ngay và sửa lỗi. Trong trường hợp này chúng ta cần thay đổi sang tùy chọn PDO::ERRMODE_EXCEPTION,. Hãy tham khảo một vài tùy chọn sau:
+
+– PDO::ERRMODE_SILENT
+– PDO::ERRMODE_WARNING
+– PDO::ERRMODE_EXCEPTION
+
+
+https://nhanweb.com/su-dung-php-ket-noi-voi-mysql-ban-da-biet-het-ve-no-chua.html
+*/
 $statement = $pdo->query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL");
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 echo htmlentities($row['_message']);

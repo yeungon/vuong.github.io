@@ -1,0 +1,361 @@
+Bài viết gốc là của bác tiendx2002 trên ddth, mình thấy hay và cần nên viết lại một tí theo cách hiểu của mình cho bạn nào cảm thấy cần thiết. Tất cả code trong bài viết này thuộc copyright của bác Tiến 🙂
+
+Đầu tiên ta xét ví dụ ở mã latin1:
+
+?
+1
+2
+3
+4
+5
+6
+7
+CREATE DATABASE `latindatabase` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci;
+CREATE TABLE `article` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`title` VARCHAR( 255 ) NOT NULL ,
+`content` TEXT NOT NULL ,
+PRIMARY KEY ( `id` )
+)
+Để tiết kiệm thời gian ta xem code vừa view, vừa add luôn 😀
+
+File config.php để kết nối vơi cơ sở dữ liệu
+
+<?php
+$mysql_host="localhost";
+$mysql_username="test";
+$mysql_password="test";
+$mysql_databasename="latindatabase";
+?>
+</pre>
+<strong>dbconnect.php</strong>
+<pre lang="php">
+<?php
+include ‘config.php’;
+$dbp=mysql_connect($mysql_host,$mysql_username,$mysql_password);
+mysql_select_db($mysql_databasename,$dbp);
+?>
+
+File index.php
+
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+<?php
+include 'dbconnect.php';
+if ($_POST['title'] != "") {
+    $sql = "INSERT INTO article(title, content) VALUES ('".$_POST['title']."', '".$_POST['content']."')";
+    $result = mysql_query($sql);
+}
+?>
+<html>
+<head>
+<title>Article View and Add</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<?php
+$sql = "SELECT * FROM article";
+$result = mysql_query($sql);
+while($row = mysql_fetch_array($result)) {
+    echo "<b>".$row['id']." - ".$row['title']."</b><br>";
+    echo $row['content']."<br><br>";
+}
+?>
+ 
+<form name="articleadd" method="post" action="">
+  <p>Title: 
+    <input type="text" name="title">
+    </p>
+  <p>Content:<br>
+    <textarea name="content"></textarea>
+    </p>
+  <p>
+    <label>
+    <input type="submit" name="button" id="button" value="Submit">
+    </label>
+  </p>
+</form>  
+Và đây là kết quả, view trên Firefox
+
+
+
+Có vẻ nó cũng khá “ngon lành” khi hiển thị, nhưng vấn đề ở chỗ thông tin được lưu trong database như sau:
+
+Thông tin latin1 trong DATABASE
+Thông tin latin1 trong DATABASE
+Theo một cách hiểu đơn giản nhất là : khỏi đọc được 😀
+
+Vấn đề ở đây là với cách lưu trữ như vậy sẽ gây khó khăn cho quá trình tìm kiếm trong database (tại sao bạn sẽ gặp ở một ví dụ khác tôi sẽ post sau). Sau đây ta tiếp tục với một database hoàn toàn Unicode.
+
+?
+1
+2
+3
+4
+5
+6
+CREATE DATABASE `unicodedatabase` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE TABLE `article` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`title` VARCHAR( 255 ) NOT NULL ,
+`content` TEXT NOT NULL ,
+PRIMARY KEY ( `id` )
+Hệ thống file kết nối lúc này có đôi chút khác biệt:
+
+config.php
+
+?
+1
+2
+3
+4
+5
+6
+<?php
+$mysql_host="localhost";
+$mysql_username="test";
+$mysql_password="test";
+$mysql_databasename="unicodedatabase";
+?>
+dbconnect.php
+
+?
+1
+2
+3
+4
+5
+<?php
+include 'config.php';
+$dbp=mysql_connect($mysql_host,$mysql_username,$mysql_password);
+mysql_select_db($mysql_databasename,$dbp);
+?>
+index.php
+
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+<?php
+include 'dbconnect.php';
+mysql_query("SET NAMES 'utf8'");
+if ($_POST['title'] != "") {
+    $sql = "INSERT INTO article(title, content) VALUES ('".$_POST['title']."', '".$_POST['content']."')";
+    $result = mysql_query($sql);
+}
+?>
+<html>
+<head>
+<title>Article View and Add</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<?php
+$sql = "SELECT * FROM article";
+$result = mysql_query($sql);
+while($row = mysql_fetch_array($result)) {
+    echo "<b>".$row['id']." - ".$row['title']."</b><br>";
+    echo $row['content']."<br><br>";
+}
+?>
+ 
+<form name="articleadd" method="post" action="">
+  <p>Title: 
+    <input type="text" name="title">
+    </p>
+  <p>Content:<br>
+    <textarea name="content"></textarea>
+    </p>
+  <p>
+    <label>
+    <input type="submit" name="button" id="button" value="Submit">
+    </label>
+  </p>
+</form>
+Không có nhiều sự khác biệt cho lắm nên bạn tự nghiên cứu thử nó khác biệt thế nào nhé 🙂
+
+Kết quả trong firefox vẫn không thay đổi:
+
+
+
+Điều khác biệt là thông tin được lưu trong database
+
+Thông tin UTF-8 được lưu trong database
+Thông tin UTF-8 được lưu trong database
+Rồi ! Đó là sự khác biệt lớn và chúng ta mặc định là đều hiểu nó có lợi cho việc hiển thị, lưu trữ và tìm kiếm đối với tiếng Việt. Tuy nhiên, vấn đề cần bàn nhất là làm thế nào để chuyển đổi một database từ latin1 sang UTF-8 để khắc khục các nhược điểm. Đây là cách:
+
+File config.php
+
+?
+1
+2
+3
+4
+5
+6
+<?php
+$mysql_host="localhost";
+$mysql_username="test";
+$mysql_password="test";
+$mysql_databasename="unicodedatabase";
+?>
+File dbconnect.php
+
+?
+1
+2
+3
+4
+5
+<?php
+include 'config.php';
+$dbp=mysql_connect($mysql_host,$mysql_username,$mysql_password);
+mysql_select_db($mysql_databasename,$dbp);
+?>
+File config2.php
+
+?
+1
+2
+3
+4
+5
+6
+<?php
+$mysql_host="localhost";
+$mysql_username="test";
+$mysql_password="test";
+$mysql_databasename="latindatabase";
+?>
+dbconnect2.php
+
+?
+1
+2
+3
+4
+5
+<?php
+include 'config2.php';
+$dbp=mysql_connect($mysql_host,$mysql_username,$mysql_password);
+mysql_select_db($mysql_databasename,$dbp);
+?>
+Và cuối cùng là file convert.php
+
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+<html>
+<head>
+<title>Article Convert</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<?php
+include 'dbconnect2.php';
+//First select all from one database
+$sql = "SELECT * FROM article";
+$result = mysql_query($sql);
+while($row = mysql_fetch_array($result)) {
+    $rows[] = $row;
+}
+ 
+//Then insert to the other
+include 'dbconnect.php';
+mysql_query("SET NAMES 'utf8'");
+foreach($rows as $row) {
+    $sql = "INSERT INTO article(title, content) VALUES ('".$row['title']."', '".$row['content']."')";
+    $result = mysql_query($sql);
+}
+?>
+Convert finished!
+Kết quả cuối cùng:
+
+convert latin1 to UTF-8
+convert latin1 to UTF-8
+
+
+source: https://nhanweb.com/chuyen-doi-latin1-to-utf-8-trong-mysql.html

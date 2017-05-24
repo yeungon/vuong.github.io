@@ -1,14 +1,14 @@
 Strings hay còn gọi là chuỗi , là một trong những kiểu dữ liệu quan trọng và được dùng thông dụng nhất. Việc nắm vững trong việc xử lý chuỗi sẽ giúp ích rất nhiều cho các bạn trong việc lập trình web sau này. Trong bài viết này, mình xin chia sẻ 10 đoạn code xử lý chuỗi thông dụng mà có thể các bạn sẽ cần dùng trong tương lai.
 
 
-##Tự động loại bỏ html tags từ một chuỗi
+## Tự động loại bỏ html tags từ một chuỗi
 
 Khi người dùng Submit form, các bạn có thể dễ dàng loại bỏ các thẻ html không cần thiết bằng cách sử dụng hàm strip_tags :
 
 
 $text = strip_tags($input, "");
 
-##Lấy đoạn text nằm giữa $start và $end
+## Lấy đoạn text nằm giữa $start và $end
 
 Đây có lẽ là một hàm mà bất kì một web developer tương lai nào cũng sẽ phải cần dùng tới . Nó sẽ giúp cho các bạn lấy được đoạn chữ nằm ở giữa 2 chữ khác.
 
@@ -109,7 +109,7 @@ $test_string = 'This is a test string...
  
 print_r(extract_emails($test_string));
 
-##Tạo chuỗi ngẫu nhiên
+## Tạo chuỗi ngẫu nhiên
 
 Đoạn code sau phù hợp cho việc tạo captcha
 
@@ -121,7 +121,7 @@ function generate_rand($l){
   }
   return $rand;
  }
-##Cách chuỗi tại điểm ngắt dòng.
+## Cách chuỗi tại điểm ngắt dòng.
 
 Đoạn code sau sẽ giúp các bạn cắt chuỗi từ một chuỗi khác với chiều dài chỉ định, và đặc biệt là đoạn chuỗi được lấy ra sẽ chỉ được cắt tại chỗ ngắt dòng, vì thế mà nó không làm chuỗi bị ngắt giữa chừng.
 
@@ -144,7 +144,7 @@ Và để sử dụng, các bạn khai báo như sau :
 
 $short_string=myTruncate($long_string, 100, ' ');
 
-##Phát hiện  AJAX Request
+## Phát hiện  AJAX Request
 
 Hầu hết các JavaScript frameworks như jQuery, mootools sẽ gửi một HTTP_X_REQUESTED_WITH header khi thực thi một đoạn Ajax, và từ đó chúng ta có thể kiểm chứng xem yêu cầu được gửi đó có phải là AJAX request không.
 

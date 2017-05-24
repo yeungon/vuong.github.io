@@ -1,0 +1,26 @@
+Big Data đòi hỏi phải có một hệ thống tìm kiếm dữ liệu đặc biệt lớn, và hiện tại có một vài open source tool hỗ trợ rất tốt việc này. Tìm kiếm trong Big Data cần phải có khả năng tìm kiếm dữ liệu có cấu trúc và không có cấu trúc, xử lý được nhiều truy vấn trong một thời điểm, và đặc biệt hỗ trợ tìm kiếm thời gian thực. Bài viết này giới thiệu một số open source tool đang được sử dụng phổ biến nhất hiện nay.
+
+
+Lucene
+
+Lucene là một thuật toán tìm kiếm dữ liệu theo giấy phép Apache và nó cung cấp hiệu suất cao, khả năng mở rộng index. Nó thực hiện index khoảng 100Gb dữ liệu mỗi giờ trên một hệ thống phần cứng tầm trung và tốn rất ít bộ nhớ. Các thuật toán tìm kiếm cung cấp ranked search, field searching, data-range searching,... cũng như tìm kiếm nhiều index. Nó có nhiều tùy chọn truy vấn và được phát triển hoàn toàn bằng Java.
+
+Để tìm hiểu thêm về Lucene, bạn tham khảo tại website của Apache Lucene. 
+
+Apache Solr
+
+Solr là một máy chủ tìm kiếm doanh nghiệp độc lập được phát triển dựa trên Lucene theo giấy phép của Apache. Nó có thể chạy như một máy chủ full-text search và cung cấp nhiều tính năng như faceted search, dynamic clustering, near real-time indexing và geospatial search. Chính vì vậy, nó được các nhà phát triển ưu ái sử dụng rộng rãi trong các dự án phát triển phần mềm.
+
+Để tìm hiểu thêm về Solr, bạn tham khảo tại website của Apache Solr.
+
+ElasticSearch
+
+Elasticsearch là dự án open source của Hà Lan được phát triển dựa trên Apache Solr. Dữ liệu được index bằng cách sử dụng JSON qua HTTP và nó có thể mở rộng rất lớn. Elasticsearch sử dụng ít schema hơn và nó có thể tìm kiếm trên nhiều index. Những index này được chia nhỏ và được phân tán ở các nodes. Điều này cho phép nó hoạt động nhanh chóng, dễ dàng tái cân bằng và định tuyến lại.
+
+Để tìm hiểu thêm về Elasticsearch, bạn tham khảo tại website của Elasticsearch.
+
+http://ktmt.github.io/blog/2013/10/27/full-text-search-engine/
+http://laptrinh.vn/d/4008-nhung-open-source-tools-ho-tro-tim-kiem-trong-big-data.html
+
+https://freetuts.net/xay-dung-chuc-nang-tim-kiem-voi-lenh-like-trong-php-89.html
+

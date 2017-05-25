@@ -98,6 +98,13 @@ $(function() {
 //https://stackoverflow.com/questions/7528050/live-search-optimisation-in-javascript
 //https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
 //http://code.google.com/p/jquery-debounce/
+
+
+//Take a look at jQuery Debounce.
+
+$('#search').keyup($.debounce(function() {
+    // Will only execute 300ms after the last keypress.
+}, 300));
 // đây: sau khi typing: https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
 
 ?>

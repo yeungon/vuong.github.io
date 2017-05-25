@@ -97,5 +97,7 @@ $(function() {
 // kiểm tra keyword có được đưa vào không, abort
 //https://stackoverflow.com/questions/7528050/live-search-optimisation-in-javascript
 //https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
+//http://code.google.com/p/jquery-debounce/
+// đây: sau khi typing: https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
 
 ?>

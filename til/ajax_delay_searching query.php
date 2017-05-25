@@ -71,4 +71,31 @@ function myLoop () {           //  create a loop function
 myLoop();                      //  start the loop
 
 //https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop
+
+
+//code  6
+
+function postData(){
+    var id = $('#id').val();
+
+    $.post('inc/repairs/events-backend.php',{id:id},   
+        function(data){
+        $("#display_customer").html(data);
+    });
+    return false;
+}
+
+$(function() {
+    var timer;
+    $("#id").bind('keyup input',function() {
+        timer && clearTimeout(timer);
+        timer = setTimeout(postData, 300);
+    });
+});
+
+// https://stackoverflow.com/questions/14471889/jquery-keyup-delay
+// kiểm tra keyword có được đưa vào không, abort
+//https://stackoverflow.com/questions/7528050/live-search-optimisation-in-javascript
+//https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
+
 ?>

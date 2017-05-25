@@ -107,4 +107,6 @@ $('#search').keyup($.debounce(function() {
 }, 300));
 // đây: sau khi typing: https://stackoverflow.com/questions/7373023/throttle-event-calls-in-jquery
 
+//http://jsfiddle.net/josh3736/Xnnmf/
+
 ?>

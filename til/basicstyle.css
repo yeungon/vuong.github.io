@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+/*CSS document  - Charset kia giúp hiển thị tiếng Việt trong CSS*/
+
+*{
+margin: 0px;
+}
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+width: 780px; /* giả sử hiển thị trên trên màn hình 800x600, mình giảm 20px*/
+margin: auto; /* để hiển thị ở giữa*/
+}
+#top{
+background: #0099FF;
+color: #FFFFFF;
+height: 60px;/*chiều cao của chữ*/
+text-align: center;
+line-height: 60px /*nếu line-height có cùng chiều cao thì vì có 1 dòng nên nó sẽ cân giữa cho chữ*/
+font-weight: bold;
+}
+#bottom{
+clear: left;/* để tránh chèn lên khối div info ở trên*/
+color: red;
+text-align: center;
+height: 40px;
+line-height: 40x /*mẹo tạo cân chữ theo chiều trên xuống*/
+font-weight:bold;
+
+}
+#left{
+float:left;/* vì khối div left + infor + right được bao trong khối div body có độ rộng width là 780 nên chia 3 ra và để nó trôi trái*/
+width: 150px;
+}
+
+#right{
+float:left;
+width: 150px;
+border-right: 1px solid #FF6600;
+
+}
+
+
+#info{
+float: left;
+width: 478px; /*vì border đã chiếm mất 2 px nên mình giảm còn 478px*/
+border-left: 1px solid #FF6600;
+
+}
+
